@@ -4,13 +4,12 @@ REACT estimates the five-year risk of a major adverse coronary or cerebrovascula
 
 **Calculator:** https://react-ascvd.web.app
 
-This page describes the calculator and the study behind it. The model code and parameters are not published here.
 
 ---
 
 ## Intended use
 
-REACT is intended for clinicians assessing patients aged 18 to 85 years at their first presentation with ASCVD, whether ischaemic heart disease, cerebrovascular disease or peripheral arterial disease. It is designed to support decisions on secondary prevention. It is not a substitute for clinical judgement, and it has not been evaluated or registered as a medical device.
+REACT is intended for clinicians assessing patients aged 18 to 85 years at their first presentation with ASCVD. It is designed to support decisions on secondary prevention. It is not a substitute for clinical judgement, and it has not been evaluated or registered as a medical device.
 
 ## The study
 
@@ -24,9 +23,7 @@ REACT is intended for clinicians assessing patients aged 18 to 85 years at their
 >
 > *Manuscript in preparation. The full reference will be added here on publication.*
 
-REACT was developed using linked, routinely collected, individual-level primary and secondary care records for patients presenting with ASCVD in Wales, held in the Secure Anonymised Information Linkage (SAIL) Databank. It is a five-state multi-state Markov model. Patients enter with either a **stable diagnosis** (for example, stable angina or an arterial stenosis) or a **MACE diagnosis** (for example, myocardial infarction or stroke). They are then followed through first and subsequent MACE and death, with death treated as a competing risk. The model was externally validated in English primary care records from the Clinical Practice Research Datalink (CPRD) Aurum, linked to hospital and mortality data.
-
-The model is calibrated to the Welsh population. Absolute risks may differ in other populations, including England, until the model is recalibrated for that setting; the publication will give the details.
+REACT was developed using linked, routinely collected, individual-level primary and secondary care records for patients presenting with ASCVD in Wales, held in the Secure Anonymised Information Linkage (SAIL) Databank. The model was externally validated in English primary care records from the Clinical Practice Research Datalink (CPRD) Aurum, linked to hospital and mortality data.
 
 ## Inputs
 
@@ -47,7 +44,6 @@ The model is calibrated to the Welsh population. Absolute risks may differ in ot
 - **Five-year risk of a major adverse event.** For a stable diagnosis, this is the probability of a first MACE within five years. For a MACE diagnosis, it is the probability of a further MACE. Events followed by death within the five years are counted.
 - **Distribution at five years.** Among 100 patients with the same characteristics, the expected numbers who remain event-free, experience one MACE, experience two or more MACE, or die.
 
-Risks reflect the treatment received in usual care in the development cohort. Prescribed therapy is not an input.
 
 ## Lipid-lowering adjustment
 
